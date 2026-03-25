@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politica de Privacidad — FanFlow</title>
+  <meta name="description" content="Politica de privacidad de FANFLOW SL. Conoce como tratamos tus datos personales conforme al RGPD.">
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236C5CE7'/%3E%3Cstop offset='100%25' stop-color='%23EC4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --bg-dark: #0c1222;
+      --primary: #6C5CE7;
+      --gradient: linear-gradient(135deg, #6C5CE7, #A855F7, #EC4899);
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --nav-h: 76px;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --tr: 0.35s var(--ease);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ======= NAVBAR ======= */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--nav-h);
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-inner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    /* ======= MAIN CONTENT ======= */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 32px;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover { opacity: 0.7; }
+
+    .back-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+
+    .page-subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+
+    .section ul li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+
+    .section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .section a {
+      color: var(--primary);
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .section a:hover { opacity: 0.7; }
+
+    .section strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ======= FOOTER ======= */
+    .footer {
+      background: var(--bg-dark);
+      padding: 72px 0 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 56px;
+    }
+
+    .footer .logo {
+      font-size: 24px;
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #fff;
+    }
+
+    .footer .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .footer-tagline {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.45);
+      line-height: 1.75;
+      max-width: 260px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons { display: flex; gap: 10px; }
+
+    .social-icons a {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--tr);
+    }
+
+    .social-icons a:hover {
+      background: rgba(108, 92, 231, 0.2);
+      border-color: rgba(108, 92, 231, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .social-icons svg { width: 16px; height: 16px; fill: rgba(255, 255, 255, 0.5); }
+    .social-icons a:hover svg { fill: #fff; }
+
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.55);
+      padding: 5px 0;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: #fff; }
+
+    .footer-bottom {
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-legal-text, .footer-copy {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ======= RESPONSIVE ======= */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .page-title { font-size: 28px; }
+      .content { padding: 40px 20px 64px; }
+      .navbar-inner { padding: 0 20px; }
+      .footer-inner { padding: 0 20px; }
+    }
+
+    @media (max-width: 640px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .nav-title { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="FanFlow - Inicio">Fan<span>Flow</span></a>
+      <span class="nav-title">Politica de Privacidad</span>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Volver al inicio
+    </a>
+
+    <h1 class="page-title">Politica de Privacidad</h1>
+    <p class="page-subtitle">Ultima actualizacion: 23 de marzo de 2026</p>
+
+    <!-- 1. Responsable del tratamiento -->
+    <div class="section">
+      <h2>1. Responsable del tratamiento</h2>
+      <p>El responsable del tratamiento de tus datos personales es:</p>
+      <ul>
+        <li><strong>Razon social:</strong> FANFLOW SL</li>
+        <li><strong>CIF:</strong> B26811877</li>
+        <li><strong>Domicilio:</strong> Calle Aragon 3, 38660 Adeje, Tenerife, Espana</li>
+        <li><strong>Correo electronico:</strong> <a href="mailto:hola@fanflow.es">hola@fanflow.es</a></li>
+      </ul>
+      <p>Puedes contactarnos en cualquier momento para resolver dudas relacionadas con el tratamiento de tus datos personales.</p>
+    </div>
+
+    <!-- 2. Finalidad del tratamiento -->
+    <div class="section">
+      <h2>2. Finalidad del tratamiento</h2>
+      <p>En FANFLOW SL tratamos tus datos personales con las siguientes finalidades:</p>
+      <ul>
+        <li>Gestionar las solicitudes de contacto y consultas realizadas a traves de los formularios del sitio web.</li>
+        <li>Prestar los servicios contratados de marketing digital, gestion de redes sociales y estrategia de contenidos.</li>
+        <li>Enviar comunicaciones comerciales relacionadas con nuestros servicios, siempre que hayas dado tu consentimiento previo.</li>
+        <li>Realizar analisis estadisticos anonimos sobre el uso del sitio web para mejorar nuestros servicios.</li>
+        <li>Cumplir con las obligaciones legales que nos resulten de aplicacion.</li>
+      </ul>
+    </div>
+
+    <!-- 3. Legitimacion -->
+    <div class="section">
+      <h2>3. Legitimacion</h2>
+      <p>La base legal para el tratamiento de tus datos personales es:</p>
+      <ul>
+        <li><strong>Consentimiento del interesado:</strong> al completar nuestros formularios de contacto o suscribirte a nuestras comunicaciones, nos otorgas tu consentimiento expreso para tratar tus datos con la finalidad indicada.</li>
+        <li><strong>Ejecucion de un contrato:</strong> cuando el tratamiento es necesario para la prestacion de los servicios que nos has solicitado.</li>
+        <li><strong>Interes legitimo:</strong> para la mejora de nuestros servicios y la prevencion del fraude.</li>
+        <li><strong>Obligacion legal:</strong> para el cumplimiento de obligaciones legales y fiscales aplicables.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Destinatarios -->
+    <div class="section">
+      <h2>4. Destinatarios</h2>
+      <p>Tus datos personales no seran cedidos a terceros, salvo en los siguientes supuestos:</p>
+      <ul>
+        <li>Cuando sea necesario para la prestacion de los servicios contratados (por ejemplo, plataformas de redes sociales, herramientas de email marketing o proveedores de alojamiento web).</li>
+        <li>Cuando exista una obligacion legal de comunicarlos a administraciones publicas u organismos competentes.</li>
+        <li>Prestadores de servicios tecnologicos que actuan como encargados del tratamiento, con los que hemos suscrito los correspondientes contratos de encargo de tratamiento conforme al articulo 28 del RGPD.</li>
+      </ul>
+      <p>No se realizan transferencias internacionales de datos fuera del Espacio Economico Europeo, salvo que sea estrictamente necesario para la prestacion del servicio y se cuente con las garantias adecuadas establecidas por la normativa vigente.</p>
+    </div>
+
+    <!-- 5. Derechos del usuario -->
+    <div class="section">
+      <h2>5. Derechos del usuario</h2>
+      <p>De acuerdo con el Reglamento General de Proteccion de Datos (RGPD), tienes derecho a:</p>
+      <ul>
+        <li><strong>Acceso:</strong> conocer si estamos tratando tus datos personales y, en caso afirmativo, obtener una copia de los mismos e informacion sobre como los tratamos.</li>
+        <li><strong>Rectificacion:</strong> solicitar la correccion de datos inexactos o completar aquellos que sean incompletos.</li>
+        <li><strong>Supresion:</strong> solicitar la eliminacion de tus datos cuando, entre otros motivos, ya no sean necesarios para la finalidad para la que fueron recogidos.</li>
+        <li><strong>Portabilidad:</strong> recibir tus datos personales en un formato estructurado, de uso comun y lectura mecanica, y transmitirlos a otro responsable del tratamiento.</li>
+        <li><strong>Oposicion:</strong> oponerte al tratamiento de tus datos en determinadas circunstancias, en cuyo caso dejaremos de tratarlos salvo por motivos legitimos o para el ejercicio o defensa de reclamaciones.</li>
+        <li><strong>Limitacion del tratamiento:</strong> solicitar la limitacion del tratamiento de tus datos en determinadas circunstancias previstas en el RGPD.</li>
+      </ul>
+      <p>Para ejercer cualquiera de estos derechos, puedes enviar un correo electronico a <a href="mailto:hola@fanflow.es">hola@fanflow.es</a> indicando el derecho que deseas ejercer y acompanando una copia de tu documento de identidad.</p>
+      <p>Asimismo, te informamos de tu derecho a presentar una reclamacion ante la Agencia Espanola de Proteccion de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>) si consideras que el tratamiento de tus datos no se ajusta a la normativa vigente.</p>
+    </div>
+
+    <!-- 6. Conservacion de datos -->
+    <div class="section">
+      <h2>6. Conservacion de datos</h2>
+      <p>Conservaremos tus datos personales durante el tiempo necesario para cumplir con la finalidad para la que fueron recogidos y para determinar las posibles responsabilidades que se pudieran derivar de dicha finalidad y del tratamiento de los datos.</p>
+      <ul>
+        <li><strong>Datos de contacto:</strong> se conservaran mientras exista un interes mutuo para mantener la relacion comercial y, una vez finalizada, durante los plazos legalmente establecidos.</li>
+        <li><strong>Datos de clientes:</strong> se conservaran durante la vigencia de la relacion contractual y, posteriormente, durante los plazos de prescripcion legalmente aplicables (con caracter general, 5 anos para obligaciones personales y 4 anos para obligaciones fiscales).</li>
+        <li><strong>Datos de comunicaciones comerciales:</strong> hasta que el usuario solicite su baja o revoque su consentimiento.</li>
+      </ul>
+    </div>
+
+    <!-- 7. Medidas de seguridad -->
+    <div class="section">
+      <h2>7. Medidas de seguridad</h2>
+      <p>En FANFLOW SL hemos adoptado las medidas tecnicas y organizativas necesarias para garantizar la seguridad de tus datos personales y evitar su alteracion, perdida, tratamiento o acceso no autorizado, teniendo en cuenta el estado de la tecnologia, la naturaleza de los datos almacenados y los riesgos a los que estan expuestos.</p>
+      <p>Entre las medidas implementadas se incluyen:</p>
+      <ul>
+        <li>Cifrado de las comunicaciones mediante protocolo SSL/TLS.</li>
+        <li>Control de acceso restringido a los datos personales.</li>
+        <li>Copias de seguridad periodicas.</li>
+        <li>Formacion del personal en materia de proteccion de datos.</li>
+        <li>Revision y actualizacion periodica de las medidas de seguridad.</li>
+      </ul>
+    </div>
+
+    <!-- 8. Modificaciones de la politica -->
+    <div class="section">
+      <h2>8. Modificaciones de la politica</h2>
+      <p>FANFLOW SL se reserva el derecho a modificar la presente Politica de Privacidad para adaptarla a novedades legislativas o jurisprudenciales, asi como a practicas del sector.</p>
+      <p>En caso de que se produzcan cambios sustanciales en la forma en que tratamos tus datos personales, te lo comunicaremos a traves de este sitio web o por otros medios para que puedas revisar los cambios antes de que entren en vigor.</p>
+      <p>Te recomendamos que consultes esta pagina periodicamente para estar informado sobre como protegemos tus datos personales.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" aria-label="FanFlow - Inicio">Fan<span>Flow</span></a>
+          <p class="footer-tagline">Hacemos que las marcas vuelen. Estrategia viral, contenido que convierte y comunidades que crecen.</p>
+          <div class="social-icons">
+            <a href="https://instagram.com/fanflow.es" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="https://tiktok.com/@fanflow.es" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.75a8.18 8.18 0 004.77 1.52V6.84a4.84 4.84 0 01-1-.15z"/></svg></a>
+            <a href="https://linkedin.com/company/fanflow-sl" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="https://youtube.com/@fanflow" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegacion</h4>
+          <a href="index.html#servicios">Servicios</a>
+          <a href="index.html#proceso">Proceso</a>
+          <a href="index.html#fundadores">Fundadores</a>
+          <a href="index.html#testimonios">Casos de exito</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Aviso legal</a>
+          <a href="privacidad.html">Politica de privacidad</a>
+          <a href="#">Politica de cookies</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:hola@fanflow.es">hola@fanflow.es</a>
+          <a href="https://fanflow.es" target="_blank" rel="noopener">fanflow.es</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal-text">FANFLOW SL &middot; Calle Aragon 3, 38660 Adeje, Tenerife, Espana</div>
+        <div class="footer-copy">&copy; 2025 FanFlow. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

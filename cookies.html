@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Cookies — FanFlow</title>
+  <meta name="description" content="Política de cookies de FANFLOW SL. Conoce qué cookies utilizamos y cómo gestionarlas.">
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236C5CE7'/%3E%3Cstop offset='100%25' stop-color='%23EC4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --bg-dark: #0c1222;
+      --primary: #6C5CE7;
+      --primary-light: #a29bfe;
+      --gradient: linear-gradient(135deg, #6C5CE7, #A855F7, #EC4899);
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --tr: 0.35s var(--ease);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ======= NAVBAR ======= */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 76px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-inner {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      transition: opacity 0.2s;
+    }
+
+    .logo:hover { opacity: 0.8; }
+
+    .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .navbar-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: -0.01em;
+    }
+
+    /* ======= CONTENT ======= */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 40px;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover { opacity: 0.7; }
+
+    .back-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .page-title {
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .page-subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    p, li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .content a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: opacity 0.2s;
+    }
+
+    .content a:hover { opacity: 0.7; }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 48px 0;
+    }
+
+    /* ======= TABLE ======= */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 20px 0 24px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead {
+      background: #f8fafc;
+    }
+
+    th {
+      text-align: left;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 14px 18px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      line-height: 1.55;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background: rgba(108, 92, 231, 0.03);
+    }
+
+    td:first-child {
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .cookie-type-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .badge-tecnica {
+      background: rgba(0, 214, 143, 0.1);
+      color: #059669;
+    }
+
+    .badge-analitica {
+      background: rgba(0, 180, 216, 0.1);
+      color: #0284C7;
+    }
+
+    .badge-marketing {
+      background: rgba(236, 72, 153, 0.1);
+      color: #DB2777;
+    }
+
+    /* ======= FOOTER ======= */
+    .footer {
+      background: var(--bg-dark);
+      padding: 48px 0 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 40px;
+    }
+
+    .footer .logo {
+      font-size: 24px;
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #fff;
+    }
+
+    .footer .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .footer-tagline {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.45);
+      line-height: 1.75;
+      max-width: 260px;
+    }
+
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.55);
+      padding: 5px 0;
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+
+    .footer-col a:hover { color: #fff; }
+
+    .footer-bottom {
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-legal, .footer-copy {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ======= RESPONSIVE ======= */
+    @media (max-width: 768px) {
+      .navbar-title { display: none; }
+
+      .content { padding: 40px 20px 64px; }
+
+      h2 { font-size: 20px; margin-top: 40px; }
+
+      .table-wrapper { margin-left: -20px; margin-right: -20px; border-radius: 0; border-left: none; border-right: none; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="FanFlow - Inicio">Fan<span>Flow</span></a>
+      <span class="navbar-title">Política de Cookies</span>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+    <a href="index.html" class="back-link">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+      Volver al inicio
+    </a>
+
+    <h1 class="page-title">Política de Cookies</h1>
+    <p class="page-subtitle">Última actualización: 23 de marzo de 2026</p>
+
+    <!-- 1. Qué son las cookies -->
+    <h2>1. ¿Qué son las cookies?</h2>
+    <p>Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo (ordenador, tablet o móvil) cuando visitas un sitio web. Permiten que el sitio recuerde tus acciones y preferencias durante un periodo de tiempo, de modo que no tengas que volver a introducirlos cada vez que navegas por el sitio o cambias de página.</p>
+    <p>Las cookies no pueden dañar tu dispositivo, no contienen virus y no pueden acceder a la información de tu disco duro.</p>
+
+    <div class="divider"></div>
+
+    <!-- 2. Tipos de cookies -->
+    <h2>2. Tipos de cookies que utilizamos</h2>
+    <p>A continuación, te detallamos las cookies que utiliza este sitio web, su finalidad y la duración de cada una:</p>
+
+    <h3>Cookies técnicas</h3>
+    <p>Son necesarias para el correcto funcionamiento del sitio web. Sin ellas, algunos servicios no estarían disponibles.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Finalidad</th>
+            <th>Duración</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PHPSESSID</td>
+            <td><span class="cookie-type-badge badge-tecnica">Técnica</span></td>
+            <td>Mantiene la sesión del usuario activa mientras navega por el sitio.</td>
+            <td>Sesión</td>
+          </tr>
+          <tr>
+            <td>fanflow_cookies_consent</td>
+            <td><span class="cookie-type-badge badge-tecnica">Técnica</span></td>
+            <td>Almacena la preferencia del usuario sobre la aceptación o rechazo de cookies.</td>
+            <td>12 meses</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Cookies analíticas</h3>
+    <p>Nos permiten medir y analizar el tráfico del sitio web para mejorar la experiencia de los usuarios. La información se recopila de forma anónima.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Finalidad</th>
+            <th>Duración</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>_ga</td>
+            <td><span class="cookie-type-badge badge-analitica">Analítica</span></td>
+            <td>Google Analytics. Distingue usuarios únicos asignando un identificador generado aleatoriamente.</td>
+            <td>2 años</td>
+          </tr>
+          <tr>
+            <td>_ga_*</td>
+            <td><span class="cookie-type-badge badge-analitica">Analítica</span></td>
+            <td>Google Analytics. Mantiene el estado de la sesión para recopilar datos de navegación.</td>
+            <td>2 años</td>
+          </tr>
+          <tr>
+            <td>_gid</td>
+            <td><span class="cookie-type-badge badge-analitica">Analítica</span></td>
+            <td>Google Analytics. Distingue usuarios únicos durante una sesión de navegación.</td>
+            <td>24 horas</td>
+          </tr>
+          <tr>
+            <td>_gat</td>
+            <td><span class="cookie-type-badge badge-analitica">Analítica</span></td>
+            <td>Google Analytics. Limita el porcentaje de solicitudes al servidor para controlar la recogida de datos.</td>
+            <td>1 minuto</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Cookies de marketing</h3>
+    <p>Estas cookies se utilizan para rastrear a los visitantes en los sitios web con el fin de mostrar anuncios relevantes y personalizados.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Finalidad</th>
+            <th>Duración</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>_fbp</td>
+            <td><span class="cookie-type-badge badge-marketing">Marketing</span></td>
+            <td>Meta Pixel. Identifica navegadores para ofrecer servicios de publicidad y análisis de Meta (Facebook/Instagram).</td>
+            <td>3 meses</td>
+          </tr>
+          <tr>
+            <td>_fbc</td>
+            <td><span class="cookie-type-badge badge-marketing">Marketing</span></td>
+            <td>Meta Pixel. Almacena el identificador del clic cuando un usuario llega al sitio desde un anuncio de Meta.</td>
+            <td>3 meses</td>
+          </tr>
+          <tr>
+            <td>_ttp</td>
+            <td><span class="cookie-type-badge badge-marketing">Marketing</span></td>
+            <td>TikTok Pixel. Identifica navegadores para ofrecer servicios de publicidad y análisis de TikTok.</td>
+            <td>13 meses</td>
+          </tr>
+          <tr>
+            <td>_tt_enable_cookie</td>
+            <td><span class="cookie-type-badge badge-marketing">Marketing</span></td>
+            <td>TikTok Pixel. Verifica si las cookies están habilitadas en el navegador del usuario.</td>
+            <td>13 meses</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 3. Cómo gestionar las cookies -->
+    <h2>3. Cómo gestionar las cookies</h2>
+    <p>Puedes permitir, bloquear o eliminar las cookies instaladas en tu equipo en cualquier momento a través de la configuración de tu navegador. A continuación te indicamos cómo hacerlo en los navegadores más habituales:</p>
+
+    <ul>
+      <li><strong>Google Chrome:</strong> Menú &rarr; Configuración &rarr; Privacidad y seguridad &rarr; Cookies y otros datos de sitios. Puedes bloquear o eliminar cookies desde aquí.</li>
+      <li><strong>Mozilla Firefox:</strong> Menú &rarr; Ajustes &rarr; Privacidad y seguridad &rarr; Cookies y datos del sitio. Puedes gestionar excepciones y eliminar datos.</li>
+      <li><strong>Safari:</strong> Preferencias &rarr; Privacidad &rarr; Gestionar datos de sitios web. Puedes eliminar cookies individuales o todas a la vez.</li>
+      <li><strong>Microsoft Edge:</strong> Menú &rarr; Configuración &rarr; Privacidad, búsqueda y servicios &rarr; Elegir qué borrar. Puedes gestionar y eliminar cookies.</li>
+      <li><strong>Opera:</strong> Menú &rarr; Configuración &rarr; Privacidad y seguridad &rarr; Cookies. Puedes configurar el comportamiento de las cookies.</li>
+    </ul>
+
+    <p>Ten en cuenta que si deshabilitas las cookies, es posible que algunas funcionalidades del sitio web no estén disponibles o que la experiencia de navegación se vea afectada.</p>
+
+    <div class="divider"></div>
+
+    <!-- 4. Cookies de terceros -->
+    <h2>4. Cookies de terceros</h2>
+    <p>Este sitio web utiliza servicios de terceros que pueden instalar cookies en tu dispositivo. Los proveedores con los que trabajamos son:</p>
+
+    <ul>
+      <li><strong>Google Analytics</strong> (Google LLC) — Servicio de análisis web. Puedes consultar su <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad</a> y utilizar el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">complemento de inhabilitación</a>.</li>
+      <li><strong>Meta Pixel</strong> (Meta Platforms, Inc.) — Servicio de medición publicitaria de Facebook e Instagram. Puedes consultar su <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">política de privacidad</a>.</li>
+      <li><strong>TikTok Pixel</strong> (TikTok Inc.) — Servicio de medición publicitaria de TikTok. Puedes consultar su <a href="https://www.tiktok.com/legal/page/eea/privacy-policy" target="_blank" rel="noopener">política de privacidad</a>.</li>
+    </ul>
+
+    <p>No tenemos control sobre las cookies instaladas por estos terceros. Te recomendamos consultar las políticas de privacidad de cada proveedor para obtener más información sobre cómo gestionan tus datos.</p>
+
+    <div class="divider"></div>
+
+    <!-- 5. Actualizaciones -->
+    <h2>5. Actualizaciones de esta política</h2>
+    <p>FANFLOW SL se reserva el derecho de modificar esta Política de Cookies en cualquier momento para adaptarla a novedades legislativas, criterios jurisprudenciales o prácticas del sector. Cualquier cambio sustancial será comunicado a través de un aviso en el sitio web.</p>
+    <p>Te recomendamos revisar esta política periódicamente para estar informado sobre cómo protegemos tu información.</p>
+
+    <div class="divider"></div>
+
+    <!-- 6. Contacto -->
+    <h2>6. Contacto</h2>
+    <p>Si tienes alguna pregunta sobre esta Política de Cookies o sobre el uso que hacemos de tus datos, puedes ponerte en contacto con nosotros:</p>
+
+    <ul>
+      <li><strong>Responsable:</strong> FANFLOW SL</li>
+      <li><strong>CIF:</strong> B26811877</li>
+      <li><strong>Dirección:</strong> Calle Aragón 3, 38660 Adeje, Tenerife, España</li>
+      <li><strong>Email:</strong> <a href="mailto:hola@fanflow.es">hola@fanflow.es</a></li>
+    </ul>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" aria-label="FanFlow - Inicio">Fan<span>Flow</span></a>
+          <p class="footer-tagline">Hacemos que las marcas vuelen. Estrategia viral, contenido que convierte y comunidades que crecen.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <a href="index.html#servicios">Servicios</a>
+          <a href="index.html#proceso">Proceso</a>
+          <a href="index.html#fundadores">Fundadores</a>
+          <a href="index.html#testimonios">Casos de éxito</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="index.html">Aviso legal</a>
+          <a href="index.html">Política de privacidad</a>
+          <a href="cookies.html">Política de cookies</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:hola@fanflow.es">hola@fanflow.es</a>
+          <a href="https://fanflow.es" target="_blank" rel="noopener">fanflow.es</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal">FANFLOW SL &middot; CIF: B26811877 &middot; Calle Aragón 3, 38660 Adeje, Tenerife, España</div>
+        <div class="footer-copy">&copy; 2025 FanFlow. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

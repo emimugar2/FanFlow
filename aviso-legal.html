@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aviso Legal — FanFlow</title>
+  <meta name="description" content="Aviso legal de FANFLOW SL. Información sobre condiciones de uso, propiedad intelectual y legislación aplicable.">
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236C5CE7'/%3E%3Cstop offset='100%25' stop-color='%23EC4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --bg-dark: #0c1222;
+      --primary: #6C5CE7;
+      --gradient: linear-gradient(135deg, #6C5CE7, #A855F7, #EC4899);
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ======= NAVBAR ======= */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 76px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .page-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ======= CONTENT ======= */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 40px;
+      transition: opacity 0.2s;
+    }
+
+    .back-link:hover { opacity: 0.75; }
+
+    .back-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .page-title {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .page-subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 48px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .section p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px;
+    }
+
+    .section ul li {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .section a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .section a:hover {
+      text-decoration: none;
+    }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 40px 0;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+    }
+
+    .info-table td {
+      font-size: 15px;
+      color: var(--text-muted);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.5;
+    }
+
+    .info-table td:first-child {
+      font-weight: 600;
+      color: var(--text);
+      width: 200px;
+      white-space: nowrap;
+      padding-right: 24px;
+    }
+
+    /* ======= FOOTER ======= */
+    .footer {
+      background: var(--bg-dark);
+      padding: 48px 24px 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer .logo {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .footer .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .footer-info {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3);
+      text-align: right;
+    }
+
+    .footer-links {
+      width: 100%;
+      padding-top: 20px;
+      margin-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.45);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ======= RESPONSIVE ======= */
+    @media (max-width: 600px) {
+      .content { padding: 40px 20px 60px; }
+      .page-label { display: none; }
+      .info-table td:first-child {
+        width: auto;
+        white-space: normal;
+        display: block;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+      .info-table td {
+        display: block;
+      }
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-info { text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo" aria-label="FanFlow - Inicio">Fan<span>Flow</span></a>
+      <span class="page-label">Aviso Legal</span>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+    <a href="index.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      Volver al inicio
+    </a>
+
+    <h1 class="page-title">Aviso Legal</h1>
+    <p class="page-subtitle">En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci&oacute;n y de Comercio Electr&oacute;nico (LSSI-CE), se facilita la siguiente informaci&oacute;n.</p>
+
+    <!-- 1. Datos identificativos -->
+    <div class="section">
+      <h2>1. Datos identificativos del titular</h2>
+      <p>En cumplimiento del art&iacute;culo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Informaci&oacute;n y de Comercio Electr&oacute;nico, a continuaci&oacute;n se exponen los datos identificativos del titular de este sitio web:</p>
+      <table class="info-table">
+        <tr>
+          <td>Denominaci&oacute;n social</td>
+          <td>FANFLOW SL</td>
+        </tr>
+        <tr>
+          <td>CIF</td>
+          <td>B26811877</td>
+        </tr>
+        <tr>
+          <td>Domicilio social</td>
+          <td>Calle Arag&oacute;n 3, 38660 Adeje, Tenerife, Espa&ntilde;a</td>
+        </tr>
+        <tr>
+          <td>Correo electr&oacute;nico</td>
+          <td><a href="mailto:hola@fanflow.es">hola@fanflow.es</a></td>
+        </tr>
+        <tr>
+          <td>Sitio web</td>
+          <td><a href="https://fanflow.es" target="_blank" rel="noopener">fanflow.es</a></td>
+        </tr>
+        <tr>
+          <td>Actividad</td>
+          <td>Servicios de marketing digital y gesti&oacute;n de redes sociales</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 2. Objeto y ámbito de aplicación -->
+    <div class="section">
+      <h2>2. Objeto y &aacute;mbito de aplicaci&oacute;n</h2>
+      <p>El presente aviso legal regula el acceso y uso del sitio web <strong>fanflow.es</strong> (en adelante, el &laquo;Sitio Web&raquo;), titularidad de FANFLOW SL. El acceso al Sitio Web atribuye la condici&oacute;n de usuario e implica la aceptaci&oacute;n plena y sin reservas de todas y cada una de las disposiciones incluidas en este aviso legal.</p>
+      <p>FANFLOW SL se reserva el derecho de modificar en cualquier momento la presentaci&oacute;n, configuraci&oacute;n y contenido del Sitio Web, as&iacute; como las condiciones requeridas para su acceso y/o utilizaci&oacute;n.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 3. Condiciones de uso -->
+    <div class="section">
+      <h2>3. Condiciones de uso del sitio web</h2>
+      <p>El usuario se compromete a hacer un uso adecuado y l&iacute;cito del Sitio Web, de conformidad con la legislaci&oacute;n vigente, el presente aviso legal, la moral y las buenas costumbres generalmente aceptadas, y el orden p&uacute;blico. El usuario deber&aacute; abstenerse de:</p>
+      <ul>
+        <li>Utilizar el Sitio Web de forma que pueda provocar da&ntilde;os en los sistemas f&iacute;sicos y l&oacute;gicos de FANFLOW SL, de sus proveedores o de terceros.</li>
+        <li>Introducir o difundir virus inform&aacute;ticos o cualesquiera otros sistemas que sean susceptibles de causar da&ntilde;os.</li>
+        <li>Intentar acceder, utilizar y/o manipular los datos de FANFLOW SL, terceros proveedores y otros usuarios.</li>
+        <li>Reproducir, copiar, distribuir o poner a disposici&oacute;n de terceros los contenidos del Sitio Web sin la autorizaci&oacute;n previa y por escrito de FANFLOW SL.</li>
+        <li>Utilizar los contenidos del Sitio Web con finalidades comerciales o publicitarias no autorizadas.</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 4. Propiedad intelectual e industrial -->
+    <div class="section">
+      <h2>4. Propiedad intelectual e industrial</h2>
+      <p>Todos los contenidos del Sitio Web, incluyendo a t&iacute;tulo enunciativo pero no limitativo, textos, fotograf&iacute;as, gr&aacute;ficos, im&aacute;genes, iconos, tecnolog&iacute;a, software, enlaces y dem&aacute;s contenidos audiovisuales o sonoros, as&iacute; como su dise&ntilde;o gr&aacute;fico y c&oacute;digos fuente, son propiedad intelectual de FANFLOW SL o de terceros, sin que puedan entenderse cedidos al usuario ninguno de los derechos de explotaci&oacute;n sobre los mismos m&aacute;s all&aacute; de lo estrictamente necesario para el correcto uso del Sitio Web.</p>
+      <p>Las marcas, nombres comerciales y signos distintivos son titularidad de FANFLOW SL o de terceros, sin que el acceso al Sitio Web pueda atribuir al usuario derecho alguno sobre los citados signos distintivos.</p>
+      <p>Queda prohibida la reproducci&oacute;n, transformaci&oacute;n, distribuci&oacute;n, comunicaci&oacute;n p&uacute;blica, puesta a disposici&oacute;n del p&uacute;blico y, en general, cualquier otra forma de explotaci&oacute;n, parcial o total, de los elementos referidos en el apartado anterior. La infracci&oacute;n de estos derechos podr&aacute; dar lugar a las acciones legales pertinentes.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 5. Responsabilidad -->
+    <div class="section">
+      <h2>5. Responsabilidad</h2>
+      <p>FANFLOW SL no se hace responsable, en ning&uacute;n caso, de los da&ntilde;os y perjuicios de cualquier naturaleza que pudieran derivarse del acceso o uso del Sitio Web, incluyendo, sin car&aacute;cter limitativo, los producidos en los sistemas inform&aacute;ticos o los provocados por la introducci&oacute;n de virus.</p>
+      <p>FANFLOW SL tampoco se hace responsable de los da&ntilde;os que pudieran ocasionarse a los usuarios por un uso inadecuado del Sitio Web. En particular, no se hace responsable en modo alguno de las ca&iacute;das, interrupciones, falta o defecto de las telecomunicaciones que pudieran ocurrir.</p>
+      <p>La informaci&oacute;n contenida en este Sitio Web tiene car&aacute;cter meramente orientativo e informativo, y podr&aacute; ser modificada, corregida, eliminada o a&ntilde;adida en cualquier momento, sin previo aviso.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 6. Enlaces a terceros -->
+    <div class="section">
+      <h2>6. Enlaces a terceros</h2>
+      <p>El Sitio Web puede contener enlaces o hiperv&iacute;nculos que conducen a otros sitios web gestionados por terceros, sobre los que FANFLOW SL no ejerce ning&uacute;n tipo de control. FANFLOW SL no responde ni garantiza la exactitud, veracidad o vigencia de los contenidos de dichos sitios web de terceros.</p>
+      <p>La inclusi&oacute;n de estos enlaces no implica ning&uacute;n tipo de asociaci&oacute;n, fusi&oacute;n o participaci&oacute;n con las entidades conectadas. FANFLOW SL no ser&aacute; responsable de los da&ntilde;os o perjuicios derivados del acceso del usuario a sitios web de terceros a trav&eacute;s de los enlaces publicados en el Sitio Web.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- 7. Legislación aplicable y jurisdicción -->
+    <div class="section">
+      <h2>7. Legislaci&oacute;n aplicable y jurisdicci&oacute;n</h2>
+      <p>Las presentes condiciones se rigen y se interpretan de acuerdo con la legislaci&oacute;n espa&ntilde;ola. Para la resoluci&oacute;n de cualquier controversia que pudiera derivarse del acceso o uso del Sitio Web, FANFLOW SL y el usuario acuerdan someterse a los juzgados y tribunales del domicilio del usuario, siempre que este tenga la condici&oacute;n de consumidor. En caso contrario, ambas partes se someten a los juzgados y tribunales de Santa Cruz de Tenerife.</p>
+      <p>Asimismo, de conformidad con lo dispuesto en el Reglamento (UE) 524/2013 del Parlamento Europeo y del Consejo, de 21 de mayo de 2013, informamos que la Comisi&oacute;n Europea facilita una plataforma de resoluci&oacute;n de litigios en l&iacute;nea disponible en: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="logo" aria-label="FanFlow - Inicio">Fan<span>Flow</span></a>
+      <div class="footer-info">FANFLOW SL &middot; CIF B26811877<br>Calle Arag&oacute;n 3, 38660 Adeje, Tenerife</div>
+      <div class="footer-links">
+        <div>
+          <a href="index.html">Inicio</a>
+        </div>
+        <div class="footer-copy">&copy; 2025 FanFlow. Todos los derechos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
