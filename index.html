@@ -1377,7 +1377,7 @@
           </div>
           <h2 class="cta-title">¿Listo para que tu marca explote?</h2>
           <p class="cta-sub">Agenda una llamada gratuita de 30 minutos con Bastien o Valentin. Sin compromiso.</p>
-          <form class="contact-form" action="https://formspree.io/f/xreogzga" method="POST">
+          <form class="contact-form" id="contact-form">
             <div class="form-row">
               <input type="text" name="nombre" placeholder="Tu nombre" required class="form-input">
               <input type="email" name="email" placeholder="Tu email" required class="form-input">
@@ -1387,6 +1387,7 @@
             <button type="submit" class="btn btn-white btn-lg">Agenda tu llamada gratuita
               <svg class="btn-arrow" viewBox="0 0 20 20" fill="none"><path d="M4.17 10h11.66M10.83 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
+            <p class="form-message" id="form-message" style="display:none; text-align:center; margin-top:12px; font-weight:600;"></p>
           </form>
           <div class="cta-checks">
             <span><svg class="cta-check-icon" viewBox="0 0 20 20" fill="none"><path d="M16.67 5L7.5 14.17 3.33 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Sin permanencias</span>
@@ -1592,6 +1593,40 @@
       setTimeout(function(){banner.classList.add('hidden');},500);
     });
   })();
+
+  // Contact form AJAX submit
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form = this;
+    var msg = document.getElementById('form-message');
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    fetch('https://formspree.io/f/xreogzga', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(r) {
+      if (r.ok) {
+        msg.style.display = 'block';
+        msg.style.color = '#4ade80';
+        msg.textContent = 'Mensaje enviado correctamente. Te contactaremos pronto.';
+        form.reset();
+      } else {
+        msg.style.display = 'block';
+        msg.style.color = '#f87171';
+        msg.textContent = 'Hubo un error. Inténtalo de nuevo.';
+      }
+      btn.disabled = false;
+      btn.textContent = 'Agenda tu llamada gratuita';
+    }).catch(function() {
+      msg.style.display = 'block';
+      msg.style.color = '#f87171';
+      msg.textContent = 'Error de conexión. Inténtalo de nuevo.';
+      btn.disabled = false;
+      btn.textContent = 'Agenda tu llamada gratuita';
+    });
+  });
   </script>
 </body>
 </html>
